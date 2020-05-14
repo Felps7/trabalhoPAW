@@ -1,0 +1,18 @@
+<%- include('layoutH') -%>
+<h1><%=title%></h1>
+<form action="/updatePedido/<%=pedido._id%>" method="POST">
+    <div id="form-group">
+        <label>Titulo</label>
+        <input type="text" class="form-control" name="titulo" value=<%=pedido.titulo%>>
+        <br>
+        <label>User</label>
+        <input type="text" class="form-control" name="user" value=<%=pedido.user%>>
+        <br>
+        <label>Informação</label>
+        <br>
+        <textarea name="info" class="form-group" cols="100" rows="10" value=<%=pedido.info%>></textarea>
+        <br>
+        <input class="btn btn-primary" type="submit" value="submit"/>
+    </div>
+</form>
+<%- include('layoutF') -%>

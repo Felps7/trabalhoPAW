@@ -1,0 +1,8 @@
+<%- include('layoutH') -%>
+<h1><%=title%></h1>
+<ul class="list-group">
+    <% for(var i=0; i<pedidos.length; i++) {%>
+       <li class="list-group-item"><a href="/getPedidos/<%=pedidos[i]._id%>"><%= pedidos[i].user %></a></li>
+    <% } %>
+</ul>
+<%- include('layoutF') -%>

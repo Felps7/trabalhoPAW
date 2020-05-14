@@ -1,0 +1,11 @@
+<%- include('layoutH') -%>
+<h1><%- pedido.titulo %></h1>
+
+<form action="/deletePedido/<%=pedido._id%>" method="POST">
+    <button type="submit" class="btn btn-danger">DELETE</button>
+</form>
+
+<form action="/pedido/update/<%=pedido._id%>" method="GET">
+    <button type="submit" class="btn">UPDATE</button>
+</form>
+<%- include('layoutF') -%>
